@@ -1,0 +1,73 @@
+:root{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-bar{
+    background: darkblue ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+}
+
+.var__list{
+    width: 100%;
+    margin: 0;
+}
+
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav__item{
+    padding: 0.5rem 2rem ;
+    border-bottom: 1px solid ghostwhite ;
+}
+
+.nav__item:last-of-type{
+    border-bottom: none;
+}
+
+.nav__item > a {
+    color: white;
+}
+
+
+
+/*collapsible*/
+
+.collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+/*A*/
+a:hover{
+    color: lightgreen;
+    transform: color 0.3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*# sourceMappingURL=/sheet.de161359.css.map */
