@@ -7,19 +7,19 @@
     --color-heading: #7c7c7c ;
     --color-border: ghostwhite;
     --color-body: #7fc7eb ;
-    --color-dark:#030343;
-
-    
+    --color-dark:#030343; 
 }
+
 /*TYPOGRAPHY*/
+
 ::selection{
     background: var(--color-sec);
     color: var(--color-accent);
 }
 
-html{
+/*html{
     font-size: 62.5%;
-}
+}*/
 
 img{
     width: 100%;
@@ -57,6 +57,7 @@ p{
 }
 
 /*text paletter */
+
 .head-rubik{
         font-family: "Rubik Bubbles", system-ui;
         font-weight: 400;
@@ -65,6 +66,7 @@ p{
   }
   .sec-color{
     color: var(--color-sec);
+
   }
 
   .prim-color{
@@ -75,14 +77,19 @@ p{
     color: var(--color-accent);
   }
   
-  .third-color{
+  .third-color  {
     color: var(--color-third);
   }
+
+
 
 .sec-accent-c{
     color: var(--color-sec-accent);
 }
 
+.dark-color{
+    color: var(--color-dark) ;
+}
 
 @media screen and (min-width: 1024px){
 
@@ -102,22 +109,8 @@ p{
         font-size: 2.4rem ;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*nav-bar*/
+
 .nav-bar{
     background:var(--color-prim) ;
     display: flex;
@@ -140,6 +133,7 @@ p{
 .nav__item{
     padding: 0.5rem 2rem ;
     border-bottom: 3px solid var(--color-sec) ;
+    justify-items: left;
 }
 
 .nav__item:last-of-type{
@@ -150,16 +144,70 @@ p{
     color: var(--color-heading);
 }
 
+.nav__toggler {
+    opacity: 0.5;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+      }
+    
+      .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100%;
+        opacity: 1;
+      }
+    
+      .nav__item {
+        border: 0;
+      }
+
+    .nav-bar{
+        padding: 0;
+        
+        
+    }
+    
+  }
 
 
 /*collapsible*/
 
-.collapsible__content{
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  
+  .collapsible__chevron {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+  }
+  
+  .collapsible__content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: all 0.3s;
-}
+  }
+  
+  .collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+  }
+  
+  .collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
 
 /*A*/
 a:hover{
@@ -168,9 +216,17 @@ a:hover{
 }
 
 a{
-    
     text-decoration: none;
 }
+
+
+/*icon*/
+.icon {
+    width: 40px;
+    height: 40px;
+    
+  }
+
 
 
 /*# sourceMappingURL=/sheet.de161359.css.map */
