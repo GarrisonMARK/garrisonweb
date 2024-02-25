@@ -163,6 +163,10 @@ p{
   border: var(--color-logo-blue) dotted 0.5rem;
 }
 
+.border--red{
+  border: var(--color-red) dotted 0.5rem ;
+}
+
 .border--dark{
   border: var(--color-dark) solid 0.6rem;
   border-radius: 50%;
