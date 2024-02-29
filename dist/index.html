@@ -5,7 +5,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Rubik+Bubbles&family=Satisfy&display=swap" rel="stylesheet">
@@ -28,8 +29,8 @@
     <nav class="nav-bar collapsible ">
       <i class="fa-solid fa-bars fa-xl dark-color "></i>
       <ul class="list nav__list collapsible__content">
-        <li class="nav__item "><a href="">home page</a></li>
-        <li class="nav__item"><a href="">what's new</a></li>
+        <li class="nav__item "><a href="/index.html">home page</a></li>
+        <li class="nav__item"><a href="/test.html">what's new</a></li>
         <li class="nav__item"><a href="/comeing soon.html">comeing soon</a></li>
       </ul>
       <i class="fa-solid fa-bars fa-xl dark-color "></i>
@@ -38,22 +39,20 @@
 <Section class=" block back--shapes-prim hero">
   <div class="container grid grid--1x2   ">
 <header class=" block__header hero__content ">
-  
+ 
     <picture>
       <img src="/logo.15bdb123.webp" alt="a logo that say Garrison WEB">
     </picture>
-    
-    
-
 </header>
- <div class="prim-color hero-p ">
-    <p class="animate__hinge">My name is Mark. this is my first website. i intend to use it as a playground or see what i can break or make</p>
-    </div>
+ <div class="prim-color hero-p animate__hinge ">
+  <h2 class=" animate__animated animate__hinge animate__fast accent-color ">Welcome</h2>
+  <p class="  animate__animated animate__wobble animate_slower">My name is Mark. this is my first website. i intend to use it as a playground or see what i can break or make</p>
+  </div>
 </div>
 </Section>
 
-<SECtion>
-  <div class="wrapper back--line grid--1x2 ">
+<SECtion class="block--dark">
+  <div data-aos="fade-up" class="wrapper back--line grid--1x2 ">
     <svg class="svg-animat svg-text  ">
       <text x="50%" y="50%" dy=".35em" text-anchor="middle">
         GARRISONWEB GARRISONWEB GARRISONWEB GARRISONWEB GARRISONWEB GARRISONWEB GARRISONWEB 
@@ -64,31 +63,31 @@
 
 <section class="block block--dark">
 
-  <div class="medias back--prim">
-    <div class="medias__body  ">
+  <div data-aos="fade-right" class="medias back--prim">
+    <div class="medias__body">
 
       <h3 class="medias__title  ">
-      Projecte <i class="fa-solid fa-flask fa-ms prim-color "></i>
+      Projecte <i class="fa-solid fa-flask fa-ms prim-color"></i>
       </h3>
       <p> i'm going to make a chatting systema and sign up system. maybe a game page. a calculator system i also plan to do it all from scratch.</p>
     </div>
   </div>
 
 
-  <div class="medias back--prim "> 
+  <div data-aos="fade-right" class="medias back--prim"> 
     <div class="medias__body  ">
       <h3 class="medias__title  ">
-        About <i class="fa-solid fa-file-pen fa-ms dark-color  "></i>
+        About <i class="fa-solid fa-file-pen fa-ms dark-color"></i>
       </h3>
       <p> I't i's a process of learning and breaking stuff and fixing things. i made this website to share with others what i can make.</p>
     </div>
   </div>
   
 
-  <div class="medias back--prim ">
+  <div data-aos="fade-right" class="medias back--prim">
     <div class="medias__body ">
       <h3 class="medias__title  ">
-        Next <i class="fa-brands fa-html5  fa-ms logo-green "></i>
+        Next <i class="fa-brands fa-html5  fa-ms logo-green"></i>
       </h3>
       <p>i know Css and HTML i don't know JavaScript that is what next after i learn JavaScript then it is C++ to learn.  </p>
     </div>
@@ -99,70 +98,102 @@
 
 </section>
 <section>
-  <div class="block back--lines-green ">
-<h1 class="text-center accent-color cinzel shadow-prim "> <i class="fa-solid fa-star fa-lg"></i> Special Thanks <i class="fa-solid fa-star fa-lg"></i></h1>
+  <div class="block back--lines-green">
+<h1 class="text-center accent-color cinzel shadow-prim"> <i class="fa-solid fa-star fa-lg"></i> Special Thanks <i class="fa-solid fa-star fa-lg"></i></h1>
       
   </div>
   
-
+  
     
 
 </section>
 
-<section class=" block--accent"> 
+<section class=" block--dark"> 
 
 
-<div class="container  ">
-  <div class="testimonial  ">
-    <div class="grid grid--1x2 border--heading ">
-      <div class="testimonial__image ">
+<div class="container">
+  <div class="testimonial">
+    <div class="grid grid--1x2 dotted heading-color">
+      <div data-aos="flip-left" class="testimonial__image">
         <img class="mosh--image border--dark " src="/mosh2.5e6fb608.webp" alt="a bold man ">
         
       </div>
       <blockquote class="quote">
-        <h3 class="quote__author lora white-color ">Mosh Hamedani</h3>
-        <p class="small-text">codewithmosh.com</p>
-        <i class="fa-solid fa-quote-left fa-2xl icon-container quote- quote_move border--white dark-color "></i>
-        <p class="quote__text dark-color border--logo-blue ">I believe coding should be fun and accessible to everyone.</p>
-        
+        <h3 class="quote__author lora white-color">Mosh Hamedani</h3>
+        <p class="small-text-quote">codewithmosh.com</p>
+        <i data-aos="flip-down" class="fa-solid fa-quote-left fa-2xl icon-container quote- quote_move border--white dark-color "></i>
+        <div data-aos="fade-up-left" class="dotted logo-blue">
+        <p class="quote__text accent-color">I believe coding should be fun and accessible to everyone.</p>
+        </div>
       </blockquote>
     </div>
   </div>
 </div>
 
-<div class="container  ">
+<div class="container ">
   <div class="testimonial  ">
-    <div class="grid grid--1x2 border--logo-blue ">
+    <div class="grid grid--1x2 dotted logo-blue ">
       <div class="testimonial__image ">
-        <img class="mosh--image border--white" src="/Mindset2.0db9a64b.webp" alt="a bold man ">
+        <img data-aos="flip-left" class="mosh--image border--dark" src="/Mindset2.0db9a64b.webp" alt="a bold man">
         
       </div>
       <blockquote class="quote">
         <h3 class="quote__author lora red ">Adrian Gomez</h3>
-        <p class="small-text">change your mindset podcast</p>
-        <i class="fa-solid fa-quote-left fa-2xl red  icon-container quote- quote_move border--white  "></i>
-        <p class="quote__text dark-color border--red ">I believe coding should be fun and accessible to everyone.</p>
-        
+        <p class="small-text-quote">change your mindset podcast</p>
+        <i data-aos="flip-down" class="fa-solid fa-quote-left fa-2xl red  icon-container quote- quote_move border--white"></i>
+        <div data-aos="fade-up-left" class="dotted red  ">
+        <p class="quote__text accent-color ">I believe coding should be fun and accessible to everyone.</p>
+        </div>
       </blockquote>
     </div>
   </div>
 </div>
+
+<div data-aos="flip-down" class="container">
+  <div class="testimonial  ">
+    <div class="grid grid--1x2 dotted logo-green ">
+      <blockquote class="quote">
+        <h3 class="quote__author cinzel logo-blue">mark garrison </h3>
+        
+   <div class=" dotted white-color ">
+        <p class="lora">thank you for getting at the end of this page means a lot. to me i have so much to learn</p>
+   </div>        
+      </blockquote>
+    </div>
+  </div>
+</div>
+
 </section>
 
-<footer class="block__heading block img-small grid grid--1x2 footer ">
-  <img class="center" src="/logo.15bdb123.webp" alt="">
-  <div class="footer  ">
-  <ul class="list nav__list">
-    <li class="nav__item "><a href="">home page</a></li>
-    <li class="nav__item"><a href="">what's new</a></li>
+<footer class="block__heading block img-small grid grid--1x2 footer solid dark-color ">
+<div class="center ">
+  <img class="solid prim-color " src="/logo.15bdb123.webp" alt="">
+</div>
+  <div class="footer center">
+
+  <ul class="list nav__list dash prim-color ">
+    <li class="nav__item"><a href="/index.html">home page</a></li>
+    <li class="nav__item"><a href="/test.html">what's new</a></li>
     <li class="nav__item"><a href="/comeing soon.html">comeing soon</a></li>
   </ul>
-  
-<p class="footer center "><i class="fa-solid fa-flag-usa fa-2xs white-color "></i> Made in USA </p>
-<p class="footer center"><i class="fa-solid fa-user-tie fa-2xs logo-green "></i> Owner Mark garrison </p>
-<p class="footer center"><i class="fa-solid fa-industry logo-blue "></i> Published FED 2024 </p>
+
+<ul class="list nav__list dash sec-accent-c">
+    <li class="nav__item red"><a href="https://pin.it/37vyZ9dBE"><i class="fa-brands fa-pinterest fa-xs red "></i>pinterest</a></li>
+    <li class="nav__item sec-color "><a href="https://www.instagram.com/green___maker?igsh=cjN6ZXNteDlqNWJ5"> <i class="fa-brands fa-square-instagram fa-xs third-color  "></i> instagram</a></li>
+    <li class="nav__item red"><a href="https://www.reddit.com/u/green___marker/s/TiSgdljkhY"><i class="fa-brands fa-reddit red fa-xs"></i>reddit</a></li>
+    
+</ul>
+    
+<div class="list nav__list small-text dash red ">
+    <p class="prim-color nav__item small-text "><i class="fa-solid fa-flag-usa fa-xs white-color "></i>Made in USA</p>
+    <p class="prim-color nav__item small-text "><i class="fa-solid fa-user-tie fa-xs red "></i>Owner Mark garrison</p>
+    <p class="prim-color nav__item small-text "><i class="fa-solid fa-industry fa-xs logo-blue "></i>Published 2/26/24 </p>
+</div>
+
   </div>
 </footer>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
   <script src="/main.1f19ae8e.js"></script>
 </body></html>
